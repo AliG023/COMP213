@@ -1,0 +1,105 @@
+* {
+    font-family: Arial, Verdana;
+    font-weight: 600;
+    background-color: #adcc59;
+}
+
+#bannerpic {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#mypic {
+    display: block;
+    width: 200px;
+    height: auto;
+    border-radius: 25%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#onewheel {
+    display: block;
+    width: 400px;
+    height: auto;
+    border-radius: 25%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#intro {
+    display: block;
+    flex-wrap: wrap;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#aboutme {
+    display: block;
+    flex-wrap: wrap;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#activities {
+    display: block;
+    flex-wrap: wrap;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#foottag {
+    text-align: right;
+    padding-top: 25px;
+    font-style: italic;
+}
+
+#church {
+    color: black;
+}
+
+#church:hover {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+nav a {
+    color: black;
+}
+
+nav :hover {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bolder;
+}
+
+p {
+    text-indent: 3%;
+}
+
+li {
+    list-style-type: square;
+    margin-left: 20px;
+}
