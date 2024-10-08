@@ -1,4 +1,4 @@
-# [COMP 213 COURSEWORK](COMP213)
+# COMP 213 COURSEWORK
 
 # [Assignment 1](Assignment01)
 # [Assignment 2](Assignment02)
