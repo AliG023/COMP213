@@ -116,6 +116,16 @@ fieldset {
     color: #817C00;
 }
 
+textarea {
+    width: 50vw;
+    height: 10vh;
+    padding: 10px;
+    resize: vertical;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
 label {
     color: #817C00;
 }
