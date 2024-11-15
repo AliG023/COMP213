@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <!-- Alastair Graham - Student #301483649 -->
+
+    <title>Online Evaluation Form</title>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="./Logo.png">
+        <div class="nav">
+            <a href="www.centenialcollege.ca" target="_blank">Home</a></li>
+            <a href="mailto:continuingeducation@centennialcollege.ca" target="_blank">Contact Us</a></li>
+        </div>
+    </header>
+    <main>
+        <form method="post">
+            <fieldset class="intro">
+                <h1>Centennial College</h1>
+                <h3 id="subhead">Continuing Education Course & Instructor Evaluation</h3>
+                <p>Please read each statement carefully and consider each one individually.</p>
+                <p>Please only give <b>one answer</b> for each question.</p>
+                <h3>Information</h3>
+                    <div>
+                        Course Name / Code: <input type="text" placeholder="Course" required>
+                    </div>
+                    <div>
+                        Semester: 
+                            <input type="radio" id="fall" name="semester" required> 
+                            <label for="fall">Fall</label>
+                            <input type="radio" id="winter" name="semester" required> 
+                            <label for="winter">Winter</label>
+                            <input type="radio" id="spring" name="semester" required> 
+                            <label for="spring">Spring/Summer</label> 
+                            <select name="Year">
+                                <option value=""> Select Year</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                            </select>
+                    </div>
+                    <div>
+                        Who was the Instructor: <input type="text" placeholder="Professors Name" required>
+                    </div>
+
+            </fieldset>
+            <fieldset class="instructor">
+                <h3>Instructor</h3>
+                How would you rate the instructor's:
+                <div class="question">
+                    1. <b>Knowledge</b> of subject?
+                </div>
+                <div class="answer1">
+                    <input type="radio" id="excellent1" name="answer1">
+                    <label for="excellent1">Excellent</label>
+                    <input type="radio" id="good1" name="answer1">
+                    <label for="good1">Good</label>
+                    <input type="radio" id="fair1" name="answer1">
+                    <label for="fair1">Fair</label>
+                    <input type="radio" id="notSatis1" name="answer1">
+                    <label for="notSatis1">Not Satifactory</label>
+                </div>
+                <div class="question">
+                    2. <b>Helpfulness</b>?
+                </div>
+                <div class="answer2">
+                    <input type="radio" id="excellent2" name="answer2">
+                    <label for="excellent2">Excellent</label>
+                    <input type="radio" id="good2" name="answer2">
+                    <label for="good2">Good</label>
+                    <input type="radio" id="fair2" name="answer2">
+                    <label for="fair2">Fair</label>
+                    <input type="radio" id="notSatis2" name="answer2">
+                    <label for="notSatis2">Not Satifactory</label>
+                </div>
+                <div class="question">
+                    3. <b>Courtesy and Respect</b> for all students?
+                </div>
+                <div class="answer3">
+                    <input type="radio" id="excellent3" name="answer3">
+                    <label for="excellent3">Excellent</label>
+                    <input type="radio" id="good3" name="answer3">
+                    <label for="good3">Good</label>
+                    <input type="radio" id="fair3" name="answer3">
+                    <label for="fair3">Fair</label>
+                    <input type="radio" id="notSatis3" name="answer3">
+                    <label for="notSatis3">Not Satifactory</label>
+                </div>
+                <div class="question">
+                    4. <b>Communication</b> skills?
+                </div>
+                <div class="answer4">
+                    <input type="radio" id="excellent4" name="answer4">
+                    <label for="excellent4">Excellent</label>
+                    <input type="radio" id="good4" name="answer4">
+                    <label for="good4">Good</label>
+                    <input type="radio" id="fair4" name="answer4">
+                    <label for="fair4">Fair</label>
+                    <input type="radio" id="notSatis4" name="answer4">
+                    <label for="notSatis4">Not Satifactory</label>
+                </div>
+                <div class="question">
+                    5. Overall <b>Performance</b>?
+                </div>
+                <div class="answer5">
+                    <input type="radio" id="excellent5" name="answer5">
+                    <label for="excellent5">Excellent</label>
+                    <input type="radio" id="good5" name="answer5">
+                    <label for="good5">Good</label>
+                    <input type="radio" id="fair5" name="answer5">
+                    <label for="fair5">Fair</label>
+                    <input type="radio" id="notSatis5" name="answer5">
+                    <label for="notSatis5">Not Satifactory</label>
+                </div>
+
+            </fieldset>
+            <fieldset class="course">
+                <h3>Course</h3>
+                <div class="question">
+                    6. How would you rate the <b>course materials</b>?
+                </div>
+                <div class="answer6">
+                    <input type="radio" id="excellent6" name="answer6">
+                    <label for="excellent6">Excellent</label>
+                    <input type="radio" id="good6" name="answer6">
+                    <label for="good6">Good</label>
+                    <input type="radio" id="fair6" name="answer6">
+                    <label for="fair6">Fair</label>
+                    <input type="radio" id="notSatis6" name="answer6">
+                    <label for="notSatis6">Not Satifactory</label>
+                </div>
+                <div class="question">
+                    7. How much did this course meet your <b>expectations</b>?
+                </div>
+                <div class="answer7">
+                    <input type="radio" id="excellent7" name="answer7">
+                    <label for="excellent7">Excellent</label>
+                    <input type="radio" id="good7" name="answer7">
+                    <label for="good7">Good</label>
+                    <input type="radio" id="fair7" name="answer7">
+                    <label for="fair7">Fair</label>
+                    <input type="radio" id="notSatis7" name="answer7">
+                    <label for="notSatis7">Not Satifactory</label>
+                </div>
+                <div class="question">
+                    8. How would you rate this course (<b>overall</b>)?
+                </div>
+                <div class="answer8">
+                    <input type="radio" id="excellent8" name="answer8">
+                    <label for="excellent8">Excellent</label>
+                    <input type="radio" id="good8" name="answer8">
+                    <label for="good8">Good</label>
+                    <input type="radio" id="fair8" name="answer8">
+                    <label for="fair8">Fair</label>
+                    <input type="radio" id="notSatis8" name="answer8">
+                    <label for="notSatis8">Not Satifactory</label>
+                </div>
+            </fieldset>
+            <fieldset class="general info">
+                <h3>General Information</h3>
+                <div class="question">
+                    9. Was the <b>course outline</b> reviewed/explained at the beginning of your course?
+                </div>
+                <div class="answer9">
+                    <input type="range" id="knowledge9" min="1" max="3" step="1" list="yes_no_notsure9">
+                    <datalist id="yes_no_notsure9">
+                        <option value="1" label="Not Sure"></option>
+                        <option value="2" label="No"></option>
+                        <option value="3" label="Yes"></option>
+                    </datalist>
+                    <div class="range-labels9">
+                        <span>Yes</span>
+                        <span>No</span>
+                        <span>Not Sure</span>
+                    </div>
+                </div>
+        
+                <div class="question">
+                    10. Would you <b>recommend</b> this course to a friend with the same interests?
+                </div>
+                <div class="answer10">
+                    <input type="range" id="knowledge10" min="1" max="3" step="1" list="yes_no_notsure10">
+                    <datalist id="yes_no_notsure10">
+                        <option value="1" label="Not Sure"></option>
+                        <option value="2" label="No"></option>
+                        <option value="3" label="Yes"></option>
+                    </datalist>
+                    <div class="range-labels10">
+                        <span>Yes</span>
+                        <span>No</span>
+                        <span>Not Sure</span>
+                    </div>   
+                </div>
+            </fieldset>
+
+            <fieldset class="comments">
+                <h3>Other Comments</h3>
+                <div class="question11">
+                    11. What is the <b>best thing</b> about this course?
+                </div>
+                <div class="answer11">
+                    <input type="text" id="knowledge">
+                </div>
+                <div class="question12">
+                    12. How could we <b>improve</b> this course?
+                </div>
+                <div class="answer12">
+                    <input type="text" id="knowledge">
+                </div>
+                <div class="question13">
+                    13. Any additional comments?
+                </div>
+                <div class="answer13">
+                    <input type="text" id="knowledge">
+                </div>
+                <div id="foot">
+                    <div id="thankYou">
+                        Thank You! We pay attention to your feedback!
+                    </div>
+                    <div id="website">
+                        Website: <a href="https://www.centennialcollege.ca/continuing_education" target="_blank">www.centenialcollege.ca/continuing_education</a>
+                    </div>
+                    <div id="email">
+                        Email: <a href="mailto:continuingeducation@centennialcollege.ca" target="_blank">continuingeducation@centennialcollege.ca</a>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div>
+                        <input type="submit" name="submit" value="Send" id="submit" onclick="alert('Form Has Been Submitted! Thank you!')">
+                    </div>
+                    <div>
+                        <input type="reset" name="clear" value="Clear" id="clear" onclick="alert('Form Cleared. Please Complete Form')">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>Copyright &copy - Alastair Graham - 301483649 - F24 - Web Design - SEC.213 - Assignment 4</p>
+    </footer>
+</body>
+</html>
