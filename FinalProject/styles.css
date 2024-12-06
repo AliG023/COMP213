@@ -241,6 +241,7 @@ body {
 
 .get-help {
     background-color: rgb(202, 26, 26);
+    color: whitesmoke;
     border-radius: 25px;
     width: 80vw;
     text-align: center;
@@ -276,6 +277,7 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color: rgb(202, 26, 26);
+    color: whitesmoke;
     border-radius: 25px;
     width: 80vw;
     flex-wrap: wrap;
@@ -291,7 +293,7 @@ body {
 .social-media a {
     padding: 20px;
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
     
 }
 
@@ -310,7 +312,7 @@ body {
 .contact-list a {
     padding: 6px;
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
 }
 
 .docs {
@@ -321,7 +323,7 @@ body {
 .docs a {
     padding: 6px;
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
 }
 
 .copyright {
