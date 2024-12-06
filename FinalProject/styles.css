@@ -136,7 +136,7 @@ body {
 
 .hero-section img {
     box-sizing: border-box;
-    width: 100vw;
+    width: 98vw;
     padding: 10px;
 }
 
@@ -419,6 +419,7 @@ body {
 .registration-form h3 {
     text-align: center;
     background-color: rgb(202, 26, 26);
+    color: whitesmoke;
     border-radius: 5px;
     height: 3vh;
 }
