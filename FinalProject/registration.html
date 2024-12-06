@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <!-- Alastair Graham - 301483649 -->
+        <title>Create An Account Page</title>
+    </head>
+    <body>
+        <header>
+            <div class="registration-header">
+                <div class="header-nav">
+                    <div class="create-account">
+                        <a class="registration" href="registration.html">
+                            <img src="./img/person_add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Create Account Icon" title="Register">
+                        </a>
+                    </div>
+                    <div class="login">
+                        <a class="log" href="javascript:void(0);" onclick="openLoginModal()">
+                            <img src="./img/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Login Icon" title="Login">
+                        </a>
+                    </div>
+                    <div id="loginModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeLoginModal()">&times;</span>
+                            <iframe src="login.html" frameborder="0" style="width:100%; height:100%;"></iframe>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <img src="./img/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Menu Icon" title="Menu">
+                        <div class="dropdown-content">
+                            <a href="home.html">Home</a>
+                            <a href="javascript:void(0);" onclick="openLoginModal()">Login</a>
+                            <a href="registration.html">Register</a>
+                            <a href="cwh.html">Canadian Web Hosting Page</a>
+                            <a href="contact.html">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="registration-logo">
+                <a href="home.html" target="_top">
+                    <img src="./img/Logo.png" alt="Logo">
+                </a>
+            </div>
+            <form class="registration-form" method="post">
+                <h1>Create an Account</h1>
+                <fieldset class="registration-info">
+                    <h3>Personal Information</h3>
+                        <div class="name-fields">
+                            <div class="name-field">
+                                <input type="text" class="name-image" placeholder="First Name" required>
+                            </div>
+                            <div class="name-field">
+                                <input type="text" class="name-image" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="contact-fields">
+                            <div class="email-field">
+                                <input type="email" class="email-image" placeholder="Email Address" required>
+                            </div>
+                            <div class="phone-field">
+                                <input type="text" class="phone-image" placeholder="Phone Number" required>
+                            </div>
+                        </div>
+                </fieldset>
+                <fieldset class="registration-billing">
+                    <h3>Billing Information</h3>
+                    <input type="text" class="company-image" placeholder="Company Name (Optional)">
+                    <div class="address-fields">
+                        <div class="address-field">
+                            <input type="text" class="address-image" placeholder="Address Line 1">
+                        </div>
+                        <div class="address-field">
+                            <input type="text" class="address-image" placeholder="Address Line 1">
+                        </div>
+                    </div>
+                    <div class="location-fields">
+                        <input type="text" class="city-image" placeholder="City">
+                        <input type="text" class="post-image" placeholder="Zip / Postcode">
+                    </div>
+                    <div class="country">
+                        <select name="Country">
+                            <option value="">Select Country</option>
+                            <option value="Canada">Canada</option>
+                            <option value="USA">USA</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset class="registration-security">
+                    <h3>Account Information</h3>
+                    <div class="account-fields">
+                        <div class="account-field">
+                            <input type="text" class="account-image" id="username" placeholder="Username" required>
+                        </div>
+                        <div class="name-field">
+                            <div id="passwordForm">
+                                <input type="password" class="password-image" placeholder="Password" id="password" name="password" required>
+                                <button type="button" id="checkPassword">Check Strength</button> <p id="passwordStrength"></p> 
+                            </div> 
+                            <script src="script.js"></script>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="registration-terms">
+                    <h3>Terms and Conditions</h3>
+                    <div class="terms">
+                        <input type="checkbox" required>
+                        <p>By registering or using our website, you agree to the terms and conditions. If you do not agree to these terms, please do not use our website.</p>
+                    </div>
+                    <div class="buttons">
+                        <div>
+                            <input type="submit" name="register" value="Register" id="submit" onclick="alert('Thank you for Registering! You will recieve an email shortly.')">
+                        </div>
+                        <div>
+                            <input type="reset" name="clear" value="Clear" id="clear" onclick="alert('Form Cleared. Please Complete Form')">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <div class="get-help">
+                <h3>Get Help</h3>
+                <p>Need help? Contact our support team 24/7</p>
+                <button>1-888-545-3941</button><button onclick="liveChatAlert()">Live Chat</button><button>Email</button>
+            </div>
+            <div class="footer">
+                <div class="social-media">
+                    <a href="https://www.facebook.com/WHC.CA" target="_blank">
+                        <img src="./img/icons8-facebook-48.png">
+                    </a>
+                    <a href="https://www.instagram.com/whc.ca/#" target="_blank">
+                        <img src="./img/icons8-instagram-48.png">
+                    </a>                    
+                    <a href="https://x.com/webhostcanada" target="_blank">
+                        <img src="./img/icons8-twitter-48.png">
+                    </a>
+                </div>
+                <div class="contact-list">
+                    <a href="contact.html" target="_blank">Contact Us</a>
+                    <a href="https://whc.ca/about-web-hosting-canada" target="_blank">About Us</a>
+                    <a href="#" target="_blank">Leave Us A Review</a>
+                </div>
+                <div class="docs">
+                    <a href="https://careers.whc.ca/" target="_blank">Careers</a>
+                    <a href="#" target="_blank">Privacy Policy</a>
+                    <a href="#" target="_blank">Terms and Conditions</a>
+                </div>
+
+            </div>
+            <div class="copyright">
+                <p>Copyright © - Alastair Graham - 301483649 - F24 - Web Design - SEC.213 - Individual Term Project</p>
+                <p>Credit for Images and Information: www.whc.ca - Web Hosting Canada,<br>Microsoft Co-pilot (image generation), Google Fonts.</p>
+            </div>
+        </footer>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const menu = document.querySelector('.menu');
+                const dropdownContent = document.querySelector('.dropdown-content');
+        
+                menu.addEventListener('click', function() {
+                    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+                });
+
+                window.addEventListener('click', function(event) {
+                    if (!menu.contains(event.target)) {
+                        dropdownContent.style.display = 'none';
+                    }
+                });
+            });
+
+            function openLoginModal() {
+                document.getElementById('loginModal').style.display = 'block';
+            }
+
+            function closeLoginModal() {
+                document.getElementById('loginModal').style.display = 'none';
+            }
+
+            window.onclick = function(event) {
+                const modal = document.getElementById('loginModal');
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            }
+
+            function liveChatAlert(){
+                alert("Unfortunately Live Chat Is Currently Unavailable. Sorry For Any Inconvenience")
+            }
+
+            document.getElementById('checkPassword').addEventListener('click', function() {
+                var password = document.getElementById('password').value;
+                var strength = checkPasswordStrength(password);
+                document.getElementById('passwordStrength').innerText = strength;
+            });
+
+            function checkPasswordStrength(password) {
+                var strength = '';
+                var strengthText = '';
+                var minLength = 8;
+                var specialChar = /[!@#$%^&*(),.?":{}|<>]/;
+                var number = /\d/;
+                var upperCase = /[A-Z]/;
+                var lowerCase = /[a-z]/;
+
+                if (password.length < minLength) {
+                    strength = 'weak';
+                    strengthText = 'Password must be at least 8 characters long.';
+                } else if (!specialChar.test(password)) {
+                    strength = 'medium';
+                    strengthText = 'Password should include at least one special character.';
+                } else if (!number.test(password)) {
+                    strength = 'medium';
+                    strengthText = 'Password should include at least one number.';
+                } else if (!upperCase.test(password)) {
+                    strength = 'medium';
+                    strengthText = 'Password should include at least one uppercase letter.';
+                } else if (!lowerCase.test(password)) {
+                    strength = 'medium';
+                    strengthText = 'Password should include at least one lowercase letter.';
+                } else {
+                    strength = 'strong';
+                    strengthText = 'Password is strong!';
+                }
+
+                return strengthText;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <!-- Alastair Graham - 301483649 -->
+        <title>Canadian Web Hosting Page</title>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <a href="home.html">
+                    <img class="logo" src="./img/logo_en-normal.svg" alt="Logo">
+                </a>
+                <div class="header-nav">
+                    <div class="create-account">
+                        <a class="registration" href="registration.html">
+                            <img src="./img/person_add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Create Account Icon" title="Register">
+                        </a>
+                    </div>
+                    <div class="login">
+                        <a class="log" href="javascript:void(0);" onclick="openLoginModal()">
+                            <img src="./img/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Login Icon" title="Login">
+                        </a>
+                    </div>
+                    <div id="loginModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeLoginModal()">&times;</span>
+                            <iframe src="login.html" frameborder="0" style="width:100%; height:100%;"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="menu">
+                        <img src="./img/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Menu Icon" title="Menu">
+                        <div class="dropdown-content">
+                            <a href="home.html">Home</a>
+                            <a href="javascript:void(0);" onclick="openLoginModal()">Login</a>
+                            <a href="registration.html">Register</a>
+                            <a href="cwh.html">Canadian Web Hosting Page</a>
+                            <a href="contact.html">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="search-section">
+            <form action="">
+                <input class="search" type="text" name="search" id="search" placeholder="What Domain Are You Looking For?">
+                    <button type="submit">Search</button>
+            </form>
+        </div>
+        <div class="hero-section">
+            <img src="./img/Hero2.jpg" alt="Hero Image">
+        </div>
+        <main>
+            <div class="main-header">      
+                <h1>Our Packages</h1>
+                <p>Packages to meet All Budgets and Needs</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-packages">
+                    <img src="./img/deployed_code_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Basic Package">
+                    <h2>Basic Package</h2>
+                    <p>Simple and Affordable<br>Ideal for Individuals<br>Starting From</p>
+                    <p><a class="price">$3.15</a>/month</p>
+                    <p><s>$6.99</s><mark> <b>SAVE 55%</b></mark></p>
+                    <button class="feature-button">Add To Cart</button>
+                    <div class="feature-list">
+                        <p>Great Performance</p>
+                        <p>One Website</p>
+                        <p>Personal Email Address</p>
+                        <p>Basic Features</p>
+                        <p>1TB Storage</p>
+                    </div>
+                </div>
+                <div class="feature-packages">
+                    <img src="./img/stat_3_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Gold Package">
+                    <h2>Gold Package</h2>
+                    <p>Perfect For Businesses Want To Grow<br>Pro Performance and Features<br>Starting From</p>
+                    <p><a class="price">$3.51</a>/month</p>
+                    <p><s>$12.99</s><mark> <b>SAVE 73%</b></mark></p>
+                    <button class="feature-button">Add To Cart</button>
+                    <div class="feature-list">
+                        <p>Pro Performance</p>
+                        <p>Multiple Websites (5max)</p>
+                        <p>Email Accounts For Everyone</p>
+                        <p>Power Features</p>
+                        <p>5TB Storage</p>
+                        <p>Personalised Domain</p>
+                        <p>Professional Setup Assistance</p>
+                        <p>SSL Certificate</p>
+                    </div>
+                </div>
+                <div class="feature-packages">
+                    <img src="./img/star_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Ultimate Package">
+                    <h2>Ultimate Package</h2>
+                    <p>For All You Business Needs<br>Everything You Need In One Place<br>Starting From</p>
+                    <p><a class="price">$10.20</a>/month</p>
+                    <p><s>$16.99</s><mark> <b>SAVE 40%</b></mark></p>
+                    <button class="feature-button">Add To Cart</button>
+                    <div class="feature-list">
+                        <p>Industry Leading Performance</p>
+                        <p>Unlimited Websites</p>
+                        <p>Unlimited Email Accounts</p>
+                        <p>Unlimited Storage</p>
+                        <p>Full Time Personal Assistant</p>
+                        <p>Unlimited Domain Transfers</p>
+                        <p>Premium Features</p>
+                        <p>AI Intergration</p>
+                        <p>AI Optimisation</p>
+                        <p>SSL Certificate</p>
+                        <p>Dedicated IP Addresses</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </main>
+        <footer>
+            <div class="get-help">
+                <h3>Get Help</h3>
+                <p>Need help? Contact our support team 24/7</p>
+                <button>1-888-545-3941</button><button onclick="liveChatAlert()">Live Chat</button><button>Email</button>
+            </div>
+            <div class="footer">
+                <div class="social-media">
+                    <a href="https://www.facebook.com/WHC.CA" target="_blank">
+                        <img src="./img/icons8-facebook-48.png">
+                    </a>
+                    <a href="https://www.instagram.com/whc.ca/#" target="_blank">
+                        <img src="./img/icons8-instagram-48.png">
+                    </a>                    
+                    <a href="https://x.com/webhostcanada" target="_blank">
+                        <img src="./img/icons8-twitter-48.png">
+                    </a>
+                </div>
+                <div class="contact-list">
+                    <a href="contact.html" target="_blank">Contact Us</a>
+                    <a href="https://whc.ca/about-web-hosting-canada" target="_blank">About Us</a>
+                    <a href="#" target="_blank">Leave Us A Review</a>
+                </div>
+                <div class="docs">
+                    <a href="https://careers.whc.ca/" target="_blank">Careers</a>
+                    <a href="#" target="_blank">Privacy Policy</a>
+                    <a href="#" target="_blank">Terms and Conditions</a>
+                </div>
+
+            </div>
+            <div class="copyright">
+                <p>Copyright © - Alastair Graham - 301483649 - F24 - Web Design - SEC.213 - Individual Term Project</p>
+                <p>Credit for Images and Information: www.whc.ca - Web Hosting Canada,<br>Microsoft Co-pilot (image generation), Google Fonts.</p>
+            </div>
+        </footer>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const menu = document.querySelector('.menu');
+                const dropdownContent = document.querySelector('.dropdown-content');
+        
+                menu.addEventListener('click', function() {
+                    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+                });
+
+                window.addEventListener('click', function(event) {
+                    if (!menu.contains(event.target)) {
+                        dropdownContent.style.display = 'none';
+                    }
+                });
+            });
+
+            function openLoginModal() {
+                document.getElementById('loginModal').style.display = 'block';
+            }
+
+            function closeLoginModal() {
+                document.getElementById('loginModal').style.display = 'none';
+            }
+
+            window.onclick = function(event) {
+                const modal = document.getElementById('loginModal');
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            }
+
+            function liveChatAlert(){
+                alert("Unfortunately Live Chat Is Currently Unavailable. Sorry For Any Inconvenience")
+            }
+
+        </script>
+    </body>
+</html>

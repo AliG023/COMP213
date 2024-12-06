@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <!-- Alastair Graham - 301483649 -->
+        <title>Sign In To WHC Page</title>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <a>
+                    <img class="logo" src="./img/logo_en-normal.svg" alt="Logo">
+                </a>
+            </div>
+        </header>
+        <main>
+            <form method="post">
+                <div class="loginForm">
+                    <h2>Login:</h2>
+                        <input type="text" id="username" placeholder=" Enter Email" required>
+                        <br>
+                        <input type="password" id="password" placeholder=" Password" minlength="8" required>
+                        <br>
+                        <input type="checkbox" id="remember"> Remember Me</p>
+                        <a href="contact.html" target="_blank">Forgot Password?</a>
+                        <div class="loginButton">    
+                            <button type="submit">Login</button>
+                            <button type="reset">Clear</button>
+                        </div>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div class="loginFooter">
+                <p>New to WHC? <a href="registration.html" target="_top">  Sign Up</a></p>
+            </div>
+        </footer>
+        <script>
+            function openLoginModal() {
+                document.getElementById('loginModal').style.display = 'block';
+            }
+
+            function closeLoginModal() {
+                document.getElementById('loginModal').style.display = 'none';
+            }
+
+            // Close the modal when clicking outside of it
+            window.onclick = function(event) {
+                const modal = document.getElementById('loginModal');
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            }
+        </script>
+
+    </body>
+</html>

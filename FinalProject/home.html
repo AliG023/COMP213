@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <!-- Alastair Graham - 301483649 -->
+        <title>Home Page</title>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <a href="home.html">
+                    <img class="logo" src="./img/logo_en-normal.svg" alt="Logo">
+                </a>
+                <div class="header-nav">
+                    <div class="create-account">
+                        <a class="registration" href="registration.html">
+                            <img src="./img/person_add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Create Account Icon" title="Register">
+                        </a>
+                    </div>
+                    <div class="login">
+                        <a class="log" href="javascript:void(0);" onclick="openLoginModal()">
+                            <img src="./img/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Login Icon" title="Login">
+                        </a>
+                    </div>
+                    <div id="loginModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeLoginModal()">&times;</span>
+                            <iframe src="login.html" frameborder="0" style="width:100%; height:100%;"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="menu">
+                        <img src="./img/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Menu Icon" title="Menu">
+                        <div class="dropdown-content">
+                            <a href="home.html">Home</a>
+                            <a href="javascript:void(0);" onclick="openLoginModal()">Login</a>
+                            <a href="registration.html">Register</a>
+                            <a href="cwh.html">Canadian Web Hosting Page</a>
+                            <a href="contact.html">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="search-section">
+            <form action="">
+                <input class="search" type="text" name="search" id="search" placeholder="What Domain Are You Looking For?">
+                    <button type="submit">Search</button>
+            </form>
+        </div>
+        <div class="hero-section">
+            <img src="./img/Hero1.jpg" alt="Hero Image">
+        </div>
+        <main>
+            <div class="main-header">      
+                <h1>Our Services</h1>
+                <p>Explore the features that make our web hosting services stand out.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature">
+                    <img src="./img/cloud server services.png" alt="Cloud Servers">
+                    <h3>Cloud Servers</h3>
+                    <p>Experience the power and flexibility of our cloud servers, designed to scale with your business needs.</p>
+                    <button class="feature-button">Cloud Servers</button>
+                </div>
+                <div class="feature">
+                    <img src="./img/writing code.png" alt="Website Customisation">
+                    <h3>Website Customisation</h3>
+                    <p>Customise your website with our easy-to-use tools and templates, tailored to your unique vision.</p>
+                    <button class="feature-button">Website Customisation</button>
+                </div>
+                <div class="feature">
+                    <img src="./img/data security.jpg" alt="Secure Servers">
+                    <h3>Secure Servers</h3>
+                    <p>Keep your data safe with our top-notch security features and regular backups.</p>
+                    <button class="feature-button">Secure Servers</button>
+                </div>
+                <div class="feature">
+                    <img src="./img/web hosting.png" alt="Web Hosting">
+                    <h3>Web Hosting</h3>
+                    <p>Reliable and fast web hosting services to keep your website up and running smoothly.</p>
+                    <a href="cwh.html"><button class="feature-button">Web Hosting</button></a>
+                </div>
+            </div>
+            </div>
+        </main>
+        <footer>
+            <div class="get-help">
+                <h3>Get Help</h3>
+                <p>Need help? Contact our support team 24/7</p>
+                <button>1-888-545-3941</button><button onclick="liveChatAlert()">Live Chat</button><button>Email</button>
+            </div>
+            <div class="footer">
+                <div class="social-media">
+                    <a href="https://www.facebook.com/WHC.CA" target="_blank">
+                        <img src="./img/icons8-facebook-48.png">
+                    </a>
+                    <a href="https://www.instagram.com/whc.ca/#" target="_blank">
+                        <img src="./img/icons8-instagram-48.png">
+                    </a>                    
+                    <a href="https://x.com/webhostcanada" target="_blank">
+                        <img src="./img/icons8-twitter-48.png">
+                    </a>
+                </div>
+                <div class="contact-list">
+                    <a href="contact.html" target="_blank">Contact Us</a>
+                    <a href="https://whc.ca/about-web-hosting-canada" target="_blank">About Us</a>
+                    <a href="#" target="_blank">Leave Us A Review</a>
+                </div>
+                <div class="docs">
+                    <a href="https://careers.whc.ca/" target="_blank">Careers</a>
+                    <a href="#" target="_blank">Privacy Policy</a>
+                    <a href="#" target="_blank">Terms and Conditions</a>
+                </div>
+
+            </div>
+            <div class="copyright">
+                <p>Copyright © - Alastair Graham - 301483649 - F24 - Web Design - SEC.213 - Individual Term Project</p>
+                <p>Credit for Images and Information: www.whc.ca - Web Hosting Canada,<br>Microsoft Co-pilot (image generation), Google Fonts.</p>
+            </div>
+        </footer>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const menu = document.querySelector('.menu');
+                const dropdownContent = document.querySelector('.dropdown-content');
+        
+                menu.addEventListener('click', function() {
+                    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+                });
+
+                window.addEventListener('click', function(event) {
+                    if (!menu.contains(event.target)) {
+                        dropdownContent.style.display = 'none';
+                    }
+                });
+            });
+
+            function openLoginModal() {
+                document.getElementById('loginModal').style.display = 'block';
+            }
+
+            function closeLoginModal() {
+                document.getElementById('loginModal').style.display = 'none';
+            }
+
+            window.onclick = function(event) {
+                const modal = document.getElementById('loginModal');
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            }
+
+            function liveChatAlert(){
+                alert("Unfortunately Live Chat Is Currently Unavailable. Sorry For Any Inconvenience")
+            }
+
+        </script>
+    </body>
+</html>
